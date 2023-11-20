@@ -1,4 +1,7 @@
-
+*{
+    text-decoration: none;
+    list-style: none;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -6,7 +9,7 @@ body{
    align-items: center;
 }
 
-.container{
+.container,main, section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,29 +34,7 @@ header h1{
     text-shadow: 10px 10px 10px;
 }
 
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-}
-.navigation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-
-.navigation a{
-    padding: 0 20px;
-    text-decoration: none;
-
-}
-main, section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 main{
     padding: 40px 0;
@@ -77,4 +58,69 @@ article p{
 img{
     width: 100%;
     max-width: 417px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    position: relative;
+}
+
+.navigation a{
+   display: none;
+
+}
+
+.navigation img{
+    max-width: 52px;
+}
+
+.navigation ul{
+    width:100% ;
+    position: absolute;
+    top:45px;
+    right: 0;
+    padding: 20px 5px;
+    background-color: rgba(0, 0, 0, 0.589);
+    min-width: 120px;
+    border-radius:  0  0  0 5px;
+    box-shadow: -7px 7px 20px 3px;
+}
+
+.navigation ul>a{
+    display:flex;
+    margin: 3px 0;
+    padding: 10px 0;
+    font-size: 80%;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid wheat ; */
+    color: aliceblue;
+
+}
+
+
+
+ .navigation ul>a:active
+{
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+
+
+@media (min-width: 768px) {
+
+    .navigation a{
+        padding: 0 20px;
+        text-decoration: none;
+    
+    }
 }
